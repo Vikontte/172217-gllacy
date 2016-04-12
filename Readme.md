@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Victoria Kostina](https://up.htmlacademy.ru/htmlcss/13/user/172217).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Устименко](https://htmlacademy.ru/profile/id42018).
 
 ---
 

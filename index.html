@@ -22,9 +22,10 @@
                         <a class="main-nav-link" href="#">О компании</a>
                         </li>
                     </ul>
+<!--                каталог -->
                     <div class="catalog-window">
                             <a href="#">Новинки</a>
-                            <a href="#">Сливочное</a>
+                            <a href="inner.html">Сливочное</a>
                             <a href="#">Щербеты</a>
                             <a href="#">Фруктовый лед</a>
                             <a href="#">Мелорин</a>
@@ -32,12 +33,26 @@
 			</nav>
 			<div class="user-block">
 				<a class="search" href="#"></a>
-                <div class="search-window"> 
+                    <div class="search-window"> 
+<!--                        окно поиска-->
+                        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                            <input type="search" name="search" value="" placeholder="Что ищем?">
+                        </form>
+                    </div>
+                <a class="login" href="#">Вход</a>
+<!--                окно входа -->
+                <div class="login-form-window">
+                    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+                        <input type="email" name="email" value="" placeholder="Электронная почта">
+                        <input type="password" name="password" value="" placeholder="Пароль">
+                        <a href="#"><button class="btn" type="submit">Войти</button></a>
+                        <div class="link-container">
+                            <a href="#" class="feedback-form-link">Забыли пароль?</a>
+                            <a href="#" class="feedback-form-link">Новая регистрация</a>
+                        </div>
+                    </form>
                 </div>
-                <a class="login" href="#">
-                    <img src="" width="" height="" alt="">Вход
-                </a>
-				<a class="bag" href="#"><img src="" width="" height="" alt="">Пусто</a>
+				<a class="bag" href="#">Пусто</a>
             </div>
             <div class="work-time">
 				С 10 до 20, ежедневно
@@ -55,17 +70,14 @@
             <ul class="slider">
 		      <li class="slides slide1">
                 <span class="slider-icecream-name">Крем-брюле и пломбир с малиновым джемом</span>
-                <img src="" width="" height="" alt="">
                 <a class="btn" href="#">Давайте оба!</a>
                 </li>
 		      <li class="slides slide2">
                 <span class="slider-icecream-name">Шоколадный пломбир и лимонный сорбет</span>
-                <img src="" width="" height="" alt="">
                 <a class="btn" href="#">Давайте оба!</a>
                 </li>
 		      <li class="slides slide3">
                 <span class="slider-icecream-name">Пломбир с помадкой и клубничный щербет</span>
-                <img src="" width="" height="" alt="">
                 <a class="btn" href="#">Давайте оба!</a>
                 </li>
             </ul>	
@@ -91,26 +103,22 @@
         <div class="hit-block">
             <article class="icecream-item">
                 <img class="icecream-pic" src="" width="" height="" alt="">
-                <div class="icecream-price">310 /кг</div>
-                <img class="rub" src="" width="" height="" alt="руб">
+                <div class="icecream-price">310 &#8381;/кг</div>&#8381;
                 <span class="icecream-name">Сливочное с апельсиновым джемом и цитрусовой стружкой.</span>
             </article>
             <article class="icecream-item">
                 <img class="icecream-pic" src="" width="" height="" alt="">
-                <div class="icecream-price">380  /кг</div>
-                <img class="rub" src="" width="" height="" alt="руб">
+                <div class="icecream-price">380 &#8381;/кг</div>
                 <span class="icecream-name">Сливочно-кофейное с кусочками шоколада</span>
             </article>
             <article class="icecream-item">
                 <img class="icecream-pic" src="" width="" height="" alt="">
-                <div class="icecream-price">355  /кг</div>
-                <img class="rub" src="" width="" height="" alt="руб">
+                <div class="icecream-price">355 &#8381;/кг</div>
                 <span class="icecream-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
             </article>
             <article class="icecream-item">
                 <img class="icecream-pic" src="" width="" height="" alt="">
-                <div class="icecream-price">415  /кг</div>
-                <img class="rub" src="" width="" height="" alt="руб">
+                <div class="icecream-price">415 &#8381;/кг</div>
                 <span class="icecream-name">Сливочное крем-брюле с карамельной подливкой</span>
             </article>
         </div>
@@ -118,19 +126,15 @@
 		<section class="features">
 			<h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
 			<div class="features-item">
-				<img src="" width="" height="" alt="">
                 <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             </div>
 			<div class="features-item">
-				<img src="" width="" height="" alt="">
 				<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 			</div>
 			<div class="features-item">
-				<img src="" width="" height="" alt="">
 				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 			</div>
 			<div class="features-item">
-				<img src="" width="" height="" alt="">
 				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 			</div>
 		</section>
@@ -156,8 +160,18 @@
                 <span>Для заказов по телефону:</span>
                 <span class="phone-number">8 812 450-25-25</span>
                 <span>(с 10до 20 ежедневно)</span>
-                <button class="btn">Форма обратной связи</button>
-<!-- кнопку на форму обратной связи верстать батоном или как-то иначе?-->
+                <a href="#" class="btn">Форма обратной связи</a>
+<!--                окно фидбек -->
+                <div class="feedback-form-window">
+                    <span class="feedback-form-header">Мы обязательно вам ответим!</span>
+                    <a href="#"><img src="" width="" height="" alt="X"></a>
+                    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                        <input type="name" name="name" value="" placeholder="Электронная почта">
+                        <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+                        <input type="textarea" name="comment" value="" placeholder="Напишите что-нибудь...">
+                        <button class="btn" type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
 	</main>
@@ -170,14 +184,13 @@
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </div>
         <div class="footer-menu">
-            <img class="footer-heart" src="" width="" height="">
             <a class="footer-menu-link" href="#">Для поставщиков</a> 
             <a class="footer-menu-link"  href="#">О производстве</a>
             <a class="footer-menu-link"  href="#">Наши документы</a>
             <a class="footer-menu-link"  href="#">Экологические стандарты</a>
         </div>
         <div class="footer-made-in">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a href="https://htmlacademy.ru"><img src="" width="" height="" alt="HTML Academy"></a>
           <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> © 2016 </p>  
         </div>
     </footer>

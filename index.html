@@ -8,7 +8,7 @@
 	<header class="main-header">
         <div class="container">
             <div>
-                <img src="img/index-logo.png" width="" height="" alt="GllacyShop">
+                <img src="img/gllacyshop-logo.svg" width="154" height="64" alt="GllacyShop">
             </div>
 			<nav class="main-nav">
                     <ul>
@@ -36,16 +36,20 @@
                     <div class="search-window"> 
 <!--                        окно поиска-->
                         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                            <input type="search" name="search" value="" placeholder="Что ищем?">
+                            <label for="search">Что ищем?</label>
+                            <input type="search" id="search" name="search" value="" placeholder="Что ищем?">
+                            <button class="search-btn" type="submit"></button>
                         </form>
                     </div>
                 <a class="login" href="#">Вход</a>
 <!--                окно входа -->
                 <div class="login-form-window">
                     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-                        <input type="email" name="email" value="" placeholder="Электронная почта">
-                        <input type="password" name="password" value="" placeholder="Пароль">
-                        <a href="#"><button class="btn" type="submit">Войти</button></a>
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" placeholder="Электронная почта">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" placeholder="Пароль">
+                        <button class="btn" type="submit">Войти</button>
                         <div class="link-container">
                             <a href="#" class="feedback-form-link">Забыли пароль?</a>
                             <a href="#" class="feedback-form-link">Новая регистрация</a>
@@ -53,6 +57,24 @@
                     </form>
                 </div>
 				<a class="bag" href="#">Пусто</a>
+                <!--                окно корзина-->
+                <div class="bag-window">
+                    <div class="bag-space">
+                        <img class="item-pic" src="" width="" height="" alt="">
+                        <a class="bag-name-item">Пломбир с апельсиновым джемом</a>
+                        <span class="weightxprice">1,5кг х <span class="weight-price">200 руб.</span></span>
+                        <span class="price">300 руб.</span>
+                    </div>
+                    <div class="bag-space-item">
+                        <img class="item-pic" src="" width="" height="" alt="">
+                        <a class="bag-name-item">Клубничный пломбир с присыпкой из белого шоколада</a>
+                        <span class="weightxprice">1,5кг х <span class="weight-price">300 руб.</span></span>
+                        <span class="price">450 руб.</span>
+                        </div>
+                        <div class="bag-separator"></div>
+                        <div class="bag-total">Итого: 750 руб.</div>
+                        <a href="#" class="bag-btn">Оформить заказ</a>
+                </div>
             </div>
             <div class="work-time">
 				С 10 до 20, ежедневно
@@ -164,11 +186,13 @@
 <!--                окно фидбек -->
                 <div class="feedback-form-window">
                     <span class="feedback-form-header">Мы обязательно вам ответим!</span>
-                    <a href="#"><img src="" width="" height="" alt="X"></a>
                     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                        <input type="name" name="name" value="" placeholder="Электронная почта">
-                        <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
-                        <input type="textarea" name="comment" value="" placeholder="Напишите что-нибудь...">
+                        <label for="name">Как вас зовут?</label>
+                        <input type="name" id="name" name="name" placeholder="Электронная почта">
+                        <label for="email-feedback">Ваша почта для ответа?</label>
+                        <input type="email" id="email-feedback" name="email" placeholder="Ваша почта для ответа?">
+                        <label for="textarea">Напишите что-нибудь...</label>
+                        <input type="textarea" id="textarea" name="comment" value="" placeholder="Напишите что-нибудь...">
                         <button class="btn" type="submit">Отправить</button>
                     </form>
                 </div>

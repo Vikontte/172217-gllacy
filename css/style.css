@@ -1,0 +1,19 @@
+body { 
+    font-size: 14px;
+    line-height: 16px ;
+    color: #000000;  
+    font-weight: normal;
+    font-family: Roboto Regular, Arial;
+}
+h1 {
+    font-size: 35px;
+    line-height: 41px; 
+    font-weight: bold;
+    font-family: Roboto Bold, Arial;
+}
+h2 {
+    font-size: 24px;
+    line-height: 30px ; 
+    font-weight: bold;
+    font-family: Roboto Medium, Arial;
+}

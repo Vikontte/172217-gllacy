@@ -7,9 +7,9 @@
   </head>
   <body>
 	<header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
             <div>
-                <img src="img/gllacyshop-logo.svg" width="154" height="64" alt="GllacyShop">
+                <img class="logo" src="img/gllacyshop-logo.svg" width="154" height="64" alt="GllacyShop">
             </div>
 			<nav class="main-nav">
                     <ul>
@@ -58,7 +58,7 @@
                     </form>
                 </div>
 				<a class="bag" href="#">Пусто</a>
-                <!--                окно корзина-->
+<!--                окно корзина-->
                 <div class="bag-window">
                     <div class="bag-space">
                         <img class="item-pic" src="img/mini-1.png" width="33" height="33" alt="">
@@ -77,15 +77,18 @@
                         <a href="#" class="bag-btn">Оформить заказ</a>
                 </div>
             </div>
+        </div>
+        <div class="time-phone-block">
             <div class="work-time">
 				С 10 до 20, ежедневно
             </div>
             <div class="phone-number">
 				8 812 450-25-25
             </div>
-		</div>
+        </div>
     </header>
-	<main class="container">
+	<main>
+        <div class="container">
         <div class="slider-wrapper">
 	       <input type="radio" name="point" id="slide1" checked>
 	       <input type="radio" name="point" id="slide2">
@@ -110,13 +113,13 @@
 		      <label for="slide3"></label>
             </div>
         </div>
-        <div class="banners">
-		  <div class="banners banner1">
+        <div class="banners clearfix">
+		  <div class="banner1">
 			<span>Малинка даром!</span>
 			<p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
 			<a class="btn" href="#">Хочу варенье!</a>
 		  </div>
-		  <div class="banners banner2">
+		  <div class="banner2">
 			<span>Шоколадки даром!</span>
 			<p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 			<a class="btn" href="#">Хочу шоколадки!</a>
@@ -148,6 +151,7 @@
         
 		<section class="features">
 			<h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+            <div class="features-item-block">
 			<div class="features-item">
                 <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             </div>
@@ -160,9 +164,10 @@
 			<div class="features-item">
 				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 			</div>
+            </div>
 		</section>
         
-		<div class="news">
+		<div class="news clearfix">
             <div class="new-in-block">
 			 <span>Новое в нашем блоге</span>
 			 <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -174,6 +179,7 @@
                     <button class="btn" type="submit">Отправить</button>
                 </form>
             </div>
+        </div>
         </div>
         <div class="map">
             <img class="pin" src="img/map-pin.png" width="218" height="142" alt="">
@@ -192,8 +198,8 @@
                         <input type="name" id="name" name="name" placeholder="Электронная почта">
                         <label for="email-feedback">Ваша почта для ответа?</label>
                         <input type="email" id="email-feedback" name="email" placeholder="Ваша почта для ответа?">
-                        <label for="textarea">Напишите что-нибудь...</label>
-                        <input type="textarea" id="textarea" name="comment" value="" placeholder="Напишите что-нибудь...">
+                        <label for="comment">Напишите что-нибудь...</label>
+                        <textarea id="comment" name="comment" value="" placeholder="Напишите что-нибудь..."></textarea>
                         <button class="btn" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -201,7 +207,8 @@
         </div>
 	</main>
       
-	<footer>
+	<footer class="main-footer">
+        <div class="container">
         <div class="footer-social">
             <a class="social-btn social-btn-tw" href="#">Твиттер</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -217,6 +224,7 @@
         <div class="footer-made-in">
           <a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" width="108" height="37" alt="HTML Academy"></a>
           <p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> © 2016 </p>  
+        </div>
         </div>
     </footer>
   </body>

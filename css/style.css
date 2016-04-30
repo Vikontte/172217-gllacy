@@ -1,9 +1,19 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body { 
     font-size: 14px;
     line-height: 16px ;
     color: #000000;  
     font-weight: normal;
     font-family: Roboto Regular, Arial;
+/*
+    background: url("../img/background1.jpg") no-repeat 50% 0px;
+    background-size: 1200px auto;
+*/
 }
 h1 {
     font-size: 35px;
@@ -16,4 +26,207 @@ h2 {
     line-height: 30px ; 
     font-weight: bold;
     font-family: Roboto Medium, Arial;
+}
+
+/*ХЕДЕР*/
+.main-header {
+    background-color: #9cb0a5
+}
+.container {
+    margin: 0 auto;
+    padding: 0 27px;
+    min-width: 846px;
+    max-width: 1146px;
+    outline: solid yellow;
+}
+.logo {
+    float: left; 
+    width: 154px;
+    height: 64px; 
+    margin: auto;
+    margin-right: 20px;
+}
+.main-nav {
+    float: left;
+    width: 350px;
+    padding: 0 10px;
+    margin: auto;
+    margin-left: 10px;
+    min-height: 75px;
+}
+.main-nav li {
+    display: inline;
+}
+.user-block {
+    float: right;
+    width: 260px;
+}
+/*заменю на позиционирование абсолют*/
+.time-phone-block {
+    float: right;
+    margin-right: 27px;
+    width: 180px;
+}
+
+.catalog-window,
+.search-window,
+.login-form-window,
+.bag-window,
+.feedback-form-window {
+    display: none;
+}
+
+/*ФУТЕР*/
+.main-footer {
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    outline: solid yellow;
+}
+.footer-social,
+.footer-menu,
+.footer-made-in {
+    display: inline-block;
+    width: 33%;
+}
+
+/*main innex*/
+.slider-wrapper {
+    min-height: 559px;
+}
+
+.banners {
+/*    min-width: 846px;*/
+/*    max-width: 1146px;*/
+    outline: solid green;
+    margin-bottom: 40px;
+}
+.banner1 {
+    float: left;
+    width: 48.7%;
+    min-height: 229px;
+    outline: solid blue;
+}
+.banner2 {
+    float: right;
+    width: 48.7%;
+    min-height: 229px;
+    outline: solid blue;
+}
+.hit-block {
+    font-size: 0px;
+    outline: solid green;
+    margin-bottom: 36px;
+}
+.hit-block .icecream-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 23.2%;
+    min-height: 300px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 2.4%;
+    outline: solid red;
+}
+.hit-block .icecream-item:nth-child(4) {
+    margin-right: 0px;
+}
+.hit-block .icecream-pic {
+    width: 100%;
+    height: auto;
+}
+.features {
+    min-height: 307px;
+    margin-bottom: 40px
+}
+.features h2 {
+    margin-bottom: 35px;
+}
+.features-item-block {
+    font-size: 0px;
+    padding-left: 76px;
+    min-width: 770px;
+    outline: solid green;
+}
+.features-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 45.2%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 8%;
+    outline: solid red;
+}
+.features-item:nth-child(even) {
+    margin-right: 0;
+}
+.news {
+    margin-bottom: 45px;
+    min-height: 215px;
+    outline: solid green;
+}
+.new-in-block {
+    float: left;
+    width: 48.7%;
+    min-height: 215px;
+    outline: solid blue;
+}
+.newsletter {
+    float: right;
+    width: 48.7%;
+    min-height: 215px;
+    outline: solid blue;
+}
+.map {
+    min-width: 900px;
+    max-width: 1200px;
+    min-height: 430px;
+    margin: auto;
+    outline: solid yellow;
+}
+.contacts {
+    width: 300px;
+}
+
+/*main inner*/
+.select-form {
+    min-height: 130px;
+    margin-bottom: 35px;
+}
+.catalog-space {
+    font-size: 0px;
+    outline: solid green;
+    margin-bottom: 40px; 
+}
+.catalog-space .icecream-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 23.2%;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 2.4%;
+    margin-bottom: 38px;
+    outline: solid red;
+}
+.catalog-space .icecream-item:nth-child(4n) {
+    margin-right: 0px;
+}
+.catalog-space .icecream-pic {
+    width: 100%;
+    height: auto;
+}
+.page-number {
+    margin-bottom: 35px;
+    min-height: 30px;
+    outline: solid blue;
+}
+
+/*для всех*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.breadcrumbs li {
+    display: inline;
 }

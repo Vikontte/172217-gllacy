@@ -53,8 +53,10 @@ h2 {
     height: 64px; 
 }
 .main-nav {
+    position: relative;
     float: left;
     width: 400px;
+    z-index: 2;
 }
 .main-nav ul {
     margin: 0;
@@ -67,7 +69,7 @@ h2 {
     vertical-align: top;
     margin-top: 23px;
 }
-.main-nav a {
+.main-nav-link {
     position: relative;
     display: block;
     font-size: 16px;
@@ -79,7 +81,7 @@ h2 {
     border-radius: 16px;
     margin-bottom: 29px;
 }
-.main-nav a::after {
+.main-nav-link::after {
     position: absolute;
     content: "";
     bottom: 7px;
@@ -89,11 +91,11 @@ h2 {
     background: #ffffff;
     opacity: 0.2;
 }
-.main-nav a:hover {
+.main-nav-link:hover {
     background: #ffffff;
     color: #333333;
 }
-.main-nav a:active {
+.main-nav-link:active {
     box-shadow: inset 0px 2px 3px 0px;
 }
 .main-nav .active,
@@ -109,7 +111,6 @@ h2 {
 .user-block {
     float: right;
     margin-right:7px;
-    width: 261px;
 }
 .user-block {
     font-size: 0;
@@ -157,6 +158,17 @@ h2 {
     height: 19.719px;
     background: url("../img/bag-pic.svg") no-repeat center;
 }
+.index .bag:hover {
+    background: #f8f7f4;
+    color: #323232;
+}
+.index .bag:hover {
+    background: #f8f7f4;
+    color: #323232;
+}
+.index .bag:hover::before {
+    background: url("../img/fullbag-pic.png") no-repeat center;
+}
 .inner .user-block .bag {
     padding-right: 16px;
     background: #f7f6f3;
@@ -188,6 +200,7 @@ h2 {
 .user-block .login:hover::before {
     background: url("../img/login-pic-active.svg") no-repeat center;
 }
+
 .time-phone-block {
     position: absolute;
     right: 27px;
@@ -214,7 +227,6 @@ h2 {
 }
 
 /*ФУТЕР*/
-/* ВОПРОС! index на 1200 и на 900 дельта height 3px в макете. видимо, ошибка, не подгоняла этот момент*/
 .main-footer {
     margin-top: 0px;
     padding-top: 17px;
@@ -360,8 +372,6 @@ body > input[type="radio"] {
     background-image: url("../img/ice-cream-1.png");
     background-repeat: no-repeat;
     background-position: top center;
-    
-    transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 .site-wrapper:before,
 .site-wrapper:after {
@@ -575,7 +585,7 @@ body > input[type="radio"] {
     margin-bottom: 38px;
 
 }
-.hit-block .icecream-item {
+.icecream-item {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -588,11 +598,11 @@ body > input[type="radio"] {
     font-weight: 500;
     text-align: center;
 }
-.hit-block .icecream-item::before {
+.hit-block .icecream-wrap::before {
     display: block;
     position: absolute;
     content: "";
-    top: 9px;
+    top: 0px;
     left: 0px;
     height: 61px;
     width: 61px;
@@ -602,6 +612,63 @@ body > input[type="radio"] {
 .hit-block .icecream-item:nth-child(4) {
     margin-right: 0px;
 }
+.icecream-item::after {
+	content: '';
+	position: absolute;
+	top: -9px;
+	bottom: -77px;
+	right: -10px;
+	left: -10px;
+	background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+}
+.icecream-item:hover {
+	z-index: 200;
+}
+
+.icecream-item:hover::after {
+	visibility: visible;
+	opacity: 1;
+}
+
+.icecream-item:hover .icecream-preview {
+	visibility: visible;
+	opacity: 1;
+}
+
+.icecream-item:hover .icecream-wrap {
+	z-index: 300;
+}
+.icecream-wrap {
+    position: relative;
+}
+.icecream-preview {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 50%;
+	bottom: -55px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 202;
+}
+
+.icecream-btn {
+    padding-left: 15px;
+	padding-right: 15px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
 .hit-block .icecream-pic {
     margin:0;
     display: block;
@@ -631,7 +698,6 @@ body > input[type="radio"] {
     margin-bottom: 39px;
     padding-bottom: 15px;
     color: #323232;
-/*   ВОПРОС!  как сделать эффект наложение узора из фотошопа?просто картинка бекграундом отображается иначе, не как в макете*/
     background: #e9ddc2 url("../img/waffle.png");
     border-radius: 14px;
 
@@ -642,8 +708,7 @@ body > input[type="radio"] {
     padding-bottom: 10px;
     font-size: 24px;
     line-height: 30px;
-    font-weight: 500;
-/*    ВОПРОС! текст ползет вправо. не понимаю почему. Баг?*/
+    font-weight: bold;
 }
 .features-item-block {
     font-size: 0px;
@@ -666,12 +731,10 @@ body > input[type="radio"] {
     padding-left: 57px;
     padding-top: 12px;
     padding-bottom: 10px;
-    
 }
 .features-item:nth-child(even) {
     margin-right: 0;
     width: 48.6%;
-/*    ВОПРОС! здесь тоже что-то со шрифтом странное, изза этого убегает слово "превосходный" в правой нижней колонке*/
 }
 .features-item:nth-child(n)::before {
     content: "";
@@ -694,7 +757,6 @@ body > input[type="radio"] {
 .features-item:nth-child(4)::before {
     background: url("../img/temp-pic.svg");
 }
-
 
 .news {
     margin-bottom: 40px;
@@ -773,7 +835,6 @@ body > input[type="radio"] {
 .newsletter input[type="email"] {
     margin-bottom: 35px;
     width: 95.5%;
-/*    почему не 100 процентов?*/
     height: 40px;
     border-radius: 5px;
     border: 1px solid #b2b2b2;
@@ -799,9 +860,7 @@ body > input[type="radio"] {
 
 .map {
     position: relative;
-    min-width: 900px;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
 }
 
 .contacts {
@@ -846,9 +905,7 @@ body > input[type="radio"] {
 .contacts .btn {
     margin-top: 20px;
     padding: 10px 28px;
-    
 }
- 
 
 /*MAIN INNER*/
 
@@ -893,7 +950,6 @@ body > input[type="radio"] {
 }
 .select-form-line {
     margin-bottom: 13px;
-    width: 860px;
     font-size: 0;
 }
 .select-form-line>div {
@@ -901,7 +957,7 @@ body > input[type="radio"] {
     vertical-align: top;
     margin-left: 16px; 
 }
-.select-form-line>div:first-child {
+.select-form-line>div:first-child{
     margin-left: 0px;
 }
 .input-name {
@@ -929,6 +985,8 @@ body > input[type="radio"] {
 .sorting-block select{
     height: 36px;
     width: 193px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 18px;
 }
 .sorting-price .line {
@@ -937,6 +995,7 @@ body > input[type="radio"] {
     width: 188px;
     height: 4px;
     background: rgba(255, 255, 255, 0.2);
+    z-index: 1;
 }
 .sorting-price .center-line {
     position: absolute;
@@ -977,10 +1036,39 @@ div.sorting-fat-content {
     display: none;
 }
 .sorting-fat-content label {
-    margin-left: 45px;
+    position: relative;
+    padding-left: 30px;
+    margin-left: 15px;
 }
 label[for="content-0"] {
-    margin-left: 30px;
+    margin-left: 0px;
+}
+.sorting-fat-content label::before {
+    content: "";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    
+    padding: 9px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.sorting-fat-content label:hover::before {
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+#content-0:checked ~ label[for="content-0"]::after,
+#content-10:checked ~ label[for="content-10"]::after,
+#content-until-30:checked ~ label[for="content-until-30"]::after,
+#content-up-30:checked ~ label[for="content-up-30"]::after {
+    position:absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    
+    padding: 6px;
+    background: rgba(248, 247, 244, 1);
+    border-radius: 50%;
 }
 
 .sorting-fill .input-container{
@@ -993,13 +1081,44 @@ label[for="content-0"] {
     display: none;
 }
 .sorting-fill label {
-    margin-left: 49px;
+    position: relative;
+    padding-left: 32px;
+    margin-left: 16px;
 }
-label[for="choсolatte"] {
-    margin-left: 31px;
+label[for="chocolate-fill"] {
+    margin-left: 0px;
 }
 label[for="sirops"] {
-    margin-left: 51px;
+    margin-left: 20px;
+}
+label[for="jam"] {
+    padding-left:33px;
+}
+.sorting-fill label::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    
+    padding:9px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 3px;
+}
+#chocolate-fill:checked ~ label[for="chocolate-fill"]::after,
+#sugar:checked ~ label[for="sugar"]::after,
+#fruits:checked ~ label[for="fruits"]::after,
+#sirops:checked ~ label[for="sirops"]::after,
+#jam:checked ~ label[for="jam"]::after{
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 7px;
+
+    width:4px;
+    height:9px;
+    border-right: 3px solid rgba(255, 255, 255, 1);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    transform: rotate(45deg);
 }
 
 .btn-select-form {
@@ -1056,10 +1175,6 @@ label[for="sirops"] {
     height: auto;
     margin-bottom: 13px;
 }
-.icecream-item .btn {
-    display: none;
-}
-
 
 .page-number {
     margin-bottom: 17px;
@@ -1167,3 +1282,68 @@ label[for="sirops"] {
     display: table;
     clear: both;
 }
+
+/*всплывающие окна*/
+
+.catalog-li:hover .catalog-window {
+    display: block;
+    position: absolute;
+    width: 143px;
+    top: 60px;
+    left: -7px;
+    
+    background: #f8f7f4;
+    border: inset 1px rgba(194, 206, 199, 0.52);
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-window a {
+    display: block;
+    padding: 6px;
+    padding-left: 21px;
+    margin-bottom: 5px;
+    
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #323232;
+}
+.catalog-window a:hover {
+    background: rgba(251, 222, 216, 1);
+}
+.catalog-window a:active {
+    background: rgba(246, 181, 165, 1);
+}
+.catalog-window span {
+    display: block;
+    padding: 6px;
+    padding-left: 21px;
+    margin-bottom: 5px;
+    
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    
+    background: rgba(208, 112, 88, 1);
+}
+.catalog-window a:first-child {
+    margin-top: 5px;
+    margin-bottom: 6px;
+    position: relative;
+    font-weight: 700;
+}
+.catalog-window a:first-child::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: rgba(50, 50, 50, 0.2);
+    bottom: -5px;
+    left: 6px;
+    right: 9px;
+    z-index:10;
+}
+

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index">
     <input type="radio" name="point" id="btn-1" checked>
     <input type="radio" name="point" id="btn-2">
     <input type="radio" name="point" id="btn-3">
@@ -19,8 +19,16 @@
             </div>
 			<nav class="main-nav">
                     <ul>
-                        <li>
+                        <li class="catalog-li">
                         <a class="main-nav-link catalog" href="#">Каталог</a>
+                        <!--    каталог -->
+                        <div class="catalog-window">
+                            <a href="#">Новинки</a>
+                            <a href="inner.html">Сливочное</a>
+                            <a href="#">Щербеты</a>
+                            <a href="#">Фруктовый лед</a>
+                            <a href="#">Мелорин</a>
+                        </div> 
                         </li>
                         <li>
                         <a class="main-nav-link" href="#">Доставка и оплата</a>
@@ -29,14 +37,7 @@
                         <a class="main-nav-link" href="#">О Компании</a>
                         </li>
                     </ul>
-<!--                каталог -->
-                    <div class="catalog-window">
-                            <a href="#">Новинки</a>
-                            <a href="inner.html">Сливочное</a>
-                            <a href="#">Щербеты</a>
-                            <a href="#">Фруктовый лед</a>
-                            <a href="#">Мелорин</a>
-                    </div>
+
 			</nav>
 			<div class="user-block">
 				<a class="search" href="#"></a>
@@ -141,33 +142,53 @@
         
         <div class="hit-block">
             <article class="icecream-item">
+                <div class=icecream-wrap>
                 <img class="icecream-pic" src="img/1.png" width="276" height="267" alt="">
                 <div class="icecream-info">
                     <div class="icecream-price">310&#8381;<span class="kg">/кг</span></div>
                     <span class="icecream-name">
                     Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                 </div>
+                <div class="icecream-preview">
+                     <a href="#" class="btn icecream-btn">Быстрый просмотр</a>
+                </div>
+                </div>
             </article>
             <article class="icecream-item">
+                <div class=icecream-wrap>
                 <img class="icecream-pic" src="img/2.png" width="276" height="267" alt="">
                 <div class="icecream-info">
                     <div class="icecream-price">380&#8381;<span class="kg">/кг</span></div>
                     <span class="icecream-name">
                     Сливочно-кофейное с кусочками шоколада</span>
                 </div>
+                <div class="icecream-preview">
+                    <a href="#" class="btn icecream-btn">Быстрый просмотр</a>
+                </div>
+                </div>
             </article>
             <article class="icecream-item">
+                <div class=icecream-wrap>
                 <img class="icecream-pic" src="img/3.png" width="276" height="267" alt="">
                 <div class="icecream-info">
                     <div class="icecream-price">355&#8381;<span class="kg">/кг</span></div>
                     <span class="icecream-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                 </div>
+                 <div class="icecream-preview">
+                     <a href="#" class="btn icecream-btn">Быстрый просмотр</a>
+                </div>
                 </div>
             </article>
             <article class="icecream-item">
+                <div class=icecream-wrap>
                 <img class="icecream-pic" src="img/4.png" width="276" height="267" alt="">
                 <div class="icecream-info">
                     <div class="icecream-price">415&#8381;<span class="kg">/кг</span></div>
                     <span class="icecream-name">Сливочное крем-брюле с карамельной подливкой</span>
+                </div>
+                <div class="icecream-preview">
+                      <a href="#" class="btn icecream-btn">Быстрый просмотр</a>
+                </div>
                 </div>
             </article>
         </div>

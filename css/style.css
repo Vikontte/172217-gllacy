@@ -13,7 +13,7 @@ body {
     background-color: #849d8f;
 /*    background: url("../img/background13.jpg") no-repeat 50% 0px;*/
 /*    background-size: 900px auto;*/
-/*     background: url("../img/background13.jpg") no-repeat 50% 0px;*/
+/*     background: url("../img/background1.jpg") no-repeat 50% 0px;*/
 /*    background-size: 1200px auto;   */
 }
 h1 {
@@ -243,7 +243,7 @@ h2 {
 }
 .social-btn {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
     margin-right: 10px;
     width: 31.1px;
     height: 31px;
@@ -279,11 +279,12 @@ h2 {
 
 .footer-menu {
     text-align: center;
-        margin-bottom: 7px;
+    margin-bottom: 16px;
 }
 .footer-menu .link-block {
     position: relative;
     display: inline-block;
+    vertical-align: bottom;
     width: 350px;
 }
 .footer-menu .link-block::before {
@@ -296,12 +297,16 @@ h2 {
     background: url("../img/heart-pic.svg");
 }
 .footer-menu .link-block-left {
+    display: inline-block;
+    vertical-align: bottom;
     float: left;
     width: 115px;
     margin-left: 25px;
     text-align: left;
 }
 .footer-menu .link-block-right {
+    display: inline-block;
+    vertical-align: bottom;
     float: left;
     width: 165px;
     margin-left: 27px;
@@ -401,6 +406,7 @@ body > input[type="radio"] {
 }
 .slides .btn {
     display: inline-block;
+    vertical-align: top;
     padding: 10px 41px;
     margin-bottom: 41px;
     
@@ -443,6 +449,7 @@ body > input[type="radio"] {
 
 .controls label {
     display: inline-block;
+    vertical-align: top;
     width: 17px;
     height: 17px;
     margin-right: 8px;
@@ -536,6 +543,7 @@ body > input[type="radio"] {
 
 .btn {
     display: inline-block;
+    vertical-align: top;
     padding: 10px 22px;
     
     font-family: 'Roboto', 'Arial', sans-serif;
@@ -581,6 +589,7 @@ body > input[type="radio"] {
     padding-top: 9px;
     margin-right: 2.325%;
     width: 23.256%;
+    text-align: center;
 }
 .hit-block .icecream-wrap::before {
     display: block;
@@ -631,6 +640,7 @@ body > input[type="radio"] {
 .icecream-preview {
 	position: absolute;
 	display: inline-block;
+    vertical-align: top;
 	width: 100%;
 	left: 50%;
 	bottom: -55px;
@@ -682,7 +692,7 @@ body > input[type="radio"] {
 }
 
 .features {
-    margin-bottom: 39px;
+    margin-bottom: 35px;
     padding-bottom: 15px;
     color: #323232;
     background: #e9ddc2 url("../img/waffle.png");
@@ -859,7 +869,7 @@ body > input[type="radio"] {
     top: 62px;
     left:0px;
     right: 0px;
-    max-width: 1200px;
+    width: 1200px;
     margin: auto; 
 }
 
@@ -972,6 +982,7 @@ body > input[type="radio"] {
 }
 .input-container {
     display: inline-block;
+    vertical-align: top;
     padding: 9px 16px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 18px;
@@ -1039,6 +1050,7 @@ div.sorting-fat-content {
 }
 .sorting-fat-content label {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     padding-left: 30px;
     margin-left: 15px;
@@ -1085,6 +1097,7 @@ label[for="content-0"] {
 }
 .sorting-fill label {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     padding-left: 32px;
     margin-left: 16px;
@@ -1127,6 +1140,7 @@ label[for="jam"] {
 
 .btn-select-form {
     display: inline-block;
+    vertical-align: top;
     padding: 8px 27px;
     margin-top: 24px;
     margin-left: 14px;
@@ -1181,7 +1195,7 @@ label[for="jam"] {
 }
 
 .page-number {
-    margin-bottom: 17px;
+    margin-bottom: 25px;
     padding: 5px 0px;
     font-size: 0;
     text-align: right;
@@ -1219,6 +1233,7 @@ label[for="jam"] {
 }
 .prev {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     height: 26px;
     width: 10px;
@@ -1227,6 +1242,7 @@ label[for="jam"] {
 
 .prev:before {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     content: "";
     top: 5px;
@@ -1238,6 +1254,7 @@ label[for="jam"] {
 }
 .prev:after {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     content: "";
     bottom: 5px;
@@ -1249,6 +1266,7 @@ label[for="jam"] {
 }
 .next {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     height: 26px;
     width: 10px;
@@ -1256,6 +1274,7 @@ label[for="jam"] {
 }
 .next:before {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     content: "";
     top: 5px;
@@ -1267,6 +1286,7 @@ label[for="jam"] {
 }
 .next:after {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     content: "";
     bottom: 5px;
@@ -1366,6 +1386,7 @@ label[for="jam"] {
 
 .search-block {
     display: inline-block;
+    vertical-align: bottom;
     position: relative;
     padding-bottom: 15px;
 }
@@ -1411,6 +1432,7 @@ label[for="jam"] {
     top: 0;
     left: 0;
     display: inline-block;
+    vertical-align: bottom;
     margin-top: 3px;
     margin-left: 30px;
     font-size: 11px;
@@ -1437,6 +1459,7 @@ label[for="search"]:active{
 
 .login-form-block {
     display: inline-block;
+    vertical-align: bottom;
     position: relative;
     padding-bottom: 15px;
 }
@@ -1502,6 +1525,7 @@ label[for="search"]:active{
 }
 .login-form .link-container {
     display: inline-block;
+    vertical-align: top;
     width: 150px;
 }
 .login-form .login-form-link {
@@ -1530,6 +1554,7 @@ label[for="search"]:active{
     top: 0;
     left: 0;
     display: inline-block;
+    vertical-align: bottom;
     margin-top: 3px;
     margin-left: 30px;
     font-size: 11px;
@@ -1544,6 +1569,7 @@ label[for="search"]:active{
 
 .bag-block {
     display: inline-block;
+    vertical-align: bottom;
     position: relative;
     padding-bottom: 15px;
 }
@@ -1717,6 +1743,7 @@ label[for="search"]:active{
     position: absolute;
     content: '';
     display: inline-block;
+    vertical-align: top;
     top: 13px;
     right: 13px;
     padding: 2px;

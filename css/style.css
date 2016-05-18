@@ -272,7 +272,7 @@ h2 {
 }
 .footer-menu {
 	text-align: center;
-	margin-bottom: 16px;
+	margin-bottom: 19px;
 }
 .footer-menu .link-block {
 	position: relative;
@@ -305,7 +305,9 @@ h2 {
 	margin-left: 27px;
 	text-align: left;
 }
-.footer-menu-link {	  
+.footer-menu-link {
+	display: inline-block;
+	vertical-align: top;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -956,6 +958,9 @@ select option {
 .sorting-block select:focus {
 	background: #fff url(../img/marker-focus.svg) 171px 16px no-repeat;
 	color: #000;
+}
+select::-ms-expand {
+display: none;
 }
 .sorting-price .line {
 	position: relative;

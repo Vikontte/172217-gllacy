@@ -30,6 +30,10 @@ h2 {
 	min-width: 860px;
 	max-width: 1146px;
 }
+.index .container {
+	margin: 0 auto;
+	width: 1146px;
+}
 .main-header .container {
 	position: relative;
 	padding: 0px 20px;
@@ -806,6 +810,8 @@ body > input[type="radio"] {
 	height: 428px;
 }
 .map iframe {
+	top: 0;
+	bottom: 0;
 	position: absolute;
 	height: 428px;
 	width: 100%;
@@ -819,7 +825,7 @@ body > input[type="radio"] {
 	margin: auto;
 	z-index: 2;
 }
-.contacts { 
+.contacts {
 	position: absolute;
 	display: block;
 	top: 60px;

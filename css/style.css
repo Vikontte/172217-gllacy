@@ -351,7 +351,8 @@ body > input[type="radio"] {
   display: none;
 }
 .site-wrapper {
-	min-width: 900px;
+	min-width: 1200px;
+	margin: 0 auto;
 	background-color: #849d8f;
 	background-image: url("../img/ice-cream-1.png");
 	background-repeat: no-repeat;

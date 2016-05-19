@@ -308,7 +308,7 @@ h2 {
 .footer-menu-link {
 	display: inline-block;
 	vertical-align: top;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-decoration: none;
@@ -332,7 +332,7 @@ h2 {
 	color: #fefefe;
 }
 .footer-made-in p a{
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 12px;
 	line-height: 18px;
 	color: #fefefe;
@@ -401,7 +401,7 @@ body > input[type="radio"] {
 	padding: 10px 41px;
 	margin-bottom: 41px;
 	
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 44px;
@@ -516,7 +516,7 @@ body > input[type="radio"] {
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 22px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
@@ -524,22 +524,23 @@ body > input[type="radio"] {
 	color: #ffffff;
 	text-decoration: none;
 	background: #f26843;
-	background:	-moz-linear-gradient(top, #f26843 0%, #ca3824 100%);
+	background: -moz-linear-gradient(top, #f26843 0%, #ca3824 100%);
 	background: -webkit-linear-gradient(top, #f26843 0%, #ca3824 100%);
-	background:		 linear-gradient(to bottom, #f26843 0%, #ca3824 100%);
+	background: linear-gradient(to bottom, #f26843 0%, #ca3824 100%);
 	border-radius: 100px;
 	box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+	cursor:pointer;
 }
 .btn:hover {
-	background:	-moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-	background:		 linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .btn:active {
-	background:	-moz-linear-gradient(top, #d74531 0%, #e1613e 100%);
+	background: -moz-linear-gradient(top, #d74531 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d74531 0%, #e1613e 100%);
-	background:		 linear-gradient(to bottom, #d74531 0%, #e1613e 100%);
+	background: linear-gradient(to bottom, #d74531 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(148, 39, 24, 1);
 }
 .hit-block {
@@ -569,7 +570,7 @@ body > input[type="radio"] {
 	margin-right: 0px;
 }
 .icecream-item::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: -9px;
 	bottom: -77px;
@@ -616,7 +617,7 @@ body > input[type="radio"] {
 .icecream-btn {
 	padding-left: 15px;
 	padding-right: 15px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
@@ -791,7 +792,7 @@ body > input[type="radio"] {
 	height: 40px;
 	border-radius: 5px;
 	border: 1px solid #b2b2b2;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	padding-left: 14px;
@@ -840,7 +841,7 @@ body > input[type="radio"] {
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-bottom: 32px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -855,7 +856,7 @@ body > input[type="radio"] {
 .contacts .adress,
 .contacts .phone-number {
 	margin-right: 30px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 700;
@@ -879,7 +880,7 @@ body > input[type="radio"] {
 .breadcrumbs-link {
 	margin-right: 4px;
 	
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 	color: #ffffff;
@@ -954,6 +955,11 @@ select option {
 	border: none;
 	border-radius: 18px;
 	background: rgba(255, 255, 255, 0.2) url(../img/marker.svg) 171px 16px no-repeat;
+	cursor: pointer;
+}
+.sorting-block select:hover {
+	background: #fff url(../img/marker-focus.svg) 171px 16px no-repeat;
+	color: #000;
 }
 .sorting-block select:focus {
 	background: #fff url(../img/marker-focus.svg) 171px 16px no-repeat;
@@ -1011,6 +1017,7 @@ div.sorting-fat-content {
 	position: relative;
 	padding-left: 30px;
 	margin-left: 15px;
+	cursor: pointer;
 }
 label[for="content-0"] {
 	margin-left: 0px;
@@ -1055,6 +1062,7 @@ label[for="content-0"] {
 	position: relative;
 	padding-left: 32px;
 	margin-left: 16px;
+	cursor: pointer;
 }
 label[for="chocolate-fill"] {
 	margin-left: 0px;
@@ -1098,11 +1106,12 @@ label[for="jam"] {
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
 	border: 2px solid #ffffff;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
 	color: #ffffff;
+	cursor: pointer;
 }
 .btn-select-form:hover {
 	background: rgba(255, 255, 255, 1);
@@ -1273,7 +1282,7 @@ label[for="jam"] {
 	padding: 6px;
 	padding-left: 21px;
 	margin-bottom: 5px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 	text-decoration: none;
@@ -1290,7 +1299,7 @@ label[for="jam"] {
 	padding: 6px;
 	padding-left: 21px;
 	margin-bottom: 5px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 	text-decoration: none;
@@ -1347,7 +1356,7 @@ label[for="jam"] {
 	outline: none;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: rgba(153, 153, 153, 1);
@@ -1419,7 +1428,7 @@ label[for="search"]:active{
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: rgba(153, 153, 153, 1);
@@ -1457,14 +1466,14 @@ label[for="search"]:active{
 .login-form .login-form-link {
 	margin-top: 3px;
 	position: relative;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	color: rgba(50, 50, 50, 1);
 	text-decoration: none;
 }
 .login-form-link:after {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: 5px;
 	left:0px;
@@ -1537,7 +1546,7 @@ label[for="search"]:active{
 }
 .close-btn:before,
 .close-btn:after {
-	content: '';
+	content: "";
 	position: absolute;
 	top:9px;
 	left:4px;
@@ -1564,7 +1573,7 @@ label[for="search"]:active{
 .bag-item .bag-name-item {
 	margin:0;
 	width: 217px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 16px;
 	text-decoration: none;
@@ -1592,7 +1601,7 @@ label[for="search"]:active{
 }
 .bag-item:last-child::after {
 	position: absolute;
-	content: '';
+	content: "";
 	bottom: -17px;
 	right: 0px;
 	left: 5px;
@@ -1645,7 +1654,7 @@ label[for="search"]:active{
 	margin-left: -237px;
 	padding: 13px 24px;
 	padding-top: 15px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: rgba(153, 153, 153, 1);
@@ -1655,7 +1664,7 @@ label[for="search"]:active{
 }
 .feedback-close-btn {
 	position: absolute;
-	content: '';
+	content: "";
 	display: inline-block;
 	vertical-align: top;
 	top: 13px;
@@ -1667,7 +1676,7 @@ label[for="search"]:active{
 }
 .feedback-close-btn:before,
 .feedback-close-btn:after {
-	content: '';
+	content: "";
 	position: absolute;
 	top:9px;
 	left:0px;
@@ -1719,7 +1728,7 @@ label[for="search"]:active{
 	outline: none;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: rgba(153, 153, 153, 1);
